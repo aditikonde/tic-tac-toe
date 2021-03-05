@@ -1,11 +1,17 @@
-.square {
+body {
   background-color: #e1d1fa;
+}
+
+.square {
+  position: relative;
+  background-color: indigo;
+  color: aliceblue;
   border : 1px #999 solid;
   float: left;
   font-size: 50px;
   font-weight: bold;
-  margin-right: -1px;
-  margin-top: -1px;
+  margin-right: 2px;
+  margin-top: 2px;
   padding: 0;
   text-align: center;
   width: 80px;
@@ -28,11 +34,6 @@
   margin: 0;
 }
 
-ul {
-  padding-left: 30px;
-  list-style: none;
-}
-
 .game-info {
   margin-left: 20px;
 }
@@ -53,4 +54,26 @@ ul {
   text-align: center;
   margin-top: 1.3em;
   font-family:'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+#results {
+  font-size: 20px;
+  background-color :mediumvioletred;
+  color: #000;
+  padding: 15px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.game-btn {
+  padding: 15px;
+  background:indigo;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
