@@ -8,7 +8,6 @@ export default function Board(props) {
     const [squares, setSquares] = useState(intialSquares);
     const [isXNext, setXisNext] = useState(true);
     const [countSquares, setCount] = useState(false);
-    const allFull = false;
 
     const handleClick = (i) => {
         setCount(countSquares + 1);
@@ -44,7 +43,7 @@ export default function Board(props) {
     // const status = `Next player : ${isXNext ? 'X' : 'O'}`;
     // const showResult = (countSquares == (intialSquares.length) ? <Result value={res} /> : null);
 
-    const showResult = ((countSquares == intialSquares.length) || winner);
+    const showResult = ((countSquares === intialSquares.length) || winner);
     const status = showResult ? <Result value={res} /> : `Next player : ${isXNext ? 'X' : 'O'}`;
 
     return (
